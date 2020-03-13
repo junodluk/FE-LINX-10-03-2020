@@ -1,68 +1,58 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Weather Dashboard - A Linx Challenge
 
-## Available Scripts
+Project created as a challenge for Linx.
 
-In the project directory, you can run:
+Authored by **Alcione de Lucca Júnior** <junior.dluk@gmail.com>
 
-### `npm start`
+**Summary**
+- [Setting up](#setting-up)
+- [Running](#running)
+- [Testing](#testing)
+- [Building](#building)
+- [Packages and Dependencies](#packages-and-dependencies)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Setting up
+1. `git clone https://github.com/junodluk/FE-LINX-10-03-2020.git`;
+2. Run `npm i` to install dependencies;
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Running
+1. Start the server by running `npm start`;
+2. Access the default url `http://localhost:3000/`;
 
-### `npm test`
+## Testing
+1. Run the tests by running `npm test`;
+2. Press `a` to run all tests;
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Building
+1. Start the build process by running `npm build`;
+2. Files will be created at the folder `./build`;
 
-### `npm run build`
+## Packages and Dependencies
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [Axios](https://github.com/axios/axios)
+⋅⋅⋅"Promise based HTTP client for the browser and node.js"
+⋅⋅⋅Axios is a worldwide package that makes easy to manage multiple instances and promises.
+⋅⋅⋅I used it mostly because it's really common in web development, and also i had been using it in many personal/professional projects for a while now.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- [moment](https://github.com/moment/moment)
+⋅⋅⋅The most used package for working with dates in javascript.
+⋅⋅⋅I find it more natural to use this package than the Date class in javascript. Also, pretty common in web development.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [Styled Components](https://github.com/styled-components/styled-components)
+⋅⋅⋅A very endorsed and well made package for updating a component's style on the fly.
+⋅⋅⋅Since i dislike having my list of colors duplicated between css variables and javascript constants, it also facilitates a use of a single place for storing an app's list of colors.
 
-### `npm run eject`
+- [styled-bootstrap-grid](https://github.com/dragma/styled-bootstrap-grid)
+⋅⋅⋅A very simple package to use in conjunction with Styled Components.
+⋅⋅⋅I use it simply for it's grid system wich is based on the Bootstrap grid system.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- [xml-js](https://github.com/nashwaan/xml-js)
+⋅⋅⋅Since I was not successfull in getting consistent data from the OpenWeatherMap api, I was forced to use XML mode.
+⋅⋅⋅JSON mode does not carry the same model as XML mode, in addition, XML mode has more complete data. So i needed to use a package to speed up this setback.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [enzyme](https://github.com/enzymejs/enzyme)
+⋅⋅⋅Enzyme is a wrapper of the @testing-library from React.
+⋅⋅⋅Actually I'm quite new to this package but I wanted to use it to learn it and experiment with it.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- [check-prop-types](https://github.com/ratehub/check-prop-types)
+⋅⋅⋅A very simple utility for testing and checking component PropTypes.

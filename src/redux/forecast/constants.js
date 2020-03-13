@@ -1,0 +1,8 @@
+const constants = {
+    FETCHED_FORECAST: 'FETCHED_FORECAST',
+    FETCHING_FORECAST: 'FETCHING_FORECAST',
+    SELECT_CITY: 'SELECT_CITY',
+    SELECTED_CITY: 'SELECTED_CITY'
+};
+
+export default constants;
