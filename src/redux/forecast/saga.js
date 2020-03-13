@@ -29,7 +29,7 @@ export function* forecastCitySaga({ payload: city }) {
         ]);
         const weekForecastData = sanitizeWeekForecast(weekForecast.list);
         const currentWeatherData = sanitizeCurrentForecast(currentWeather);
-        yield put(fetchedForecast({ weekForecastData, currentWeatherData }));
+        yield put(fetchedForecast(weekForecastData, currentWeatherData));
     } catch (err) {
         yield put({ type: 'ACTION_FAIL', err });
     }
